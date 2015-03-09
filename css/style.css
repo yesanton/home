@@ -20,12 +20,16 @@
     background: transparent;
 }
 
+#bg { position: relative; top: 0; left: 0;
+z-index: -1; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
 .header {
 	position:relative;
-	height:700px;
-	background-size: 100%;
-	width:100%;
-	background-image: url(../pic.jpg);
+}
+.header ul {
+	padding:0px;
 }
 
 .flag {
@@ -44,7 +48,7 @@
 .title-wrapper {
 	position:absolute;
 	top: 100%;
-	margin-top: -18%;
+	margin-top: -30%;
 	left: 5%;
 	color: #fff;
 	font-family:bebas;
@@ -69,9 +73,16 @@ section h2 {
 }
 
 footer {
-height:200px;
-background-image:url(../footer.jpg);
+height:150px;
+background-image:url(../img/stardust.png);
 background-size: 100%;
+}
+
+footer p {
+	line-height: 150px;
+	text-align: center;
+	color:#fff;
+	margin: 0px;
 }
 .about {
 	padding:50px;
@@ -260,4 +271,84 @@ background-size: 100%;
 .details {
 	padding-top: 30px;
 	background-image: url(../img/foggy_birds.png);
+}
+/*button*/
+.btnn {
+	z-index: 0;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btnn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+	margin-top: 20px;
+}
+.btn-1e {
+	overflow: hidden;
+	width:97%;
+	margin: 20px 0 0;
+	color:#fff;
+	font-size: 1.5em;
+	color:#fff;
+	outline: none !important;
+}
+.btn-1e:focus {
+	outline:none;
+	color:#fff;
+
+}
+
+.btn-1e:after {
+	z-index:-1;
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+	color: #B2394C;
+}
+
+.btn-1e:hover:after {
+	height: 260%;
+	opacity: 1;
+}
+
+.btn-1e:active:after {
+	height: 400%;
+	opacity: 1;
 }
