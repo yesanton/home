@@ -81,7 +81,7 @@ background-size: 100%;
 }
 
 .photos {
-	height:700px;
+
 }
 
 .history {
@@ -93,13 +93,21 @@ background-size: 100%;
 }
 
 .history p {
-	padding: 25px;
-	font-size: 1.3em;
+	padding: 10px;
+	font-size: 1.5em;
 }
 
 #myCarousel {
 	width: 460px;
 	margin: 0 auto;
+}
+#myCarousel:after {
+	content:"Зріст моделі 182см. На моделі розмір M.";
+	display:block;
+	text-align: center;
+	padding-top: 7px;
+	font-size: 0.9em;
+
 }
 .carousel-control.left {
 	background: transparent;
@@ -109,7 +117,7 @@ background-size: 100%;
 }
 /*NUMBERS*/
 .numbers {
-	padding: 50px 0;
+	padding: 100px 0 50px;
 /*	background-image: url(../img/brickwall.png);*/
 }
 .numbers>div {
@@ -137,11 +145,118 @@ background-size: 100%;
 }
 .granny {
 	display: block;
-	width: 155px;
+	width: 130px;
 	margin: 0 auto;
 	padding-top: 30px;
 }
 .form-wrapper {
 	width:75%;
 	margin: 0 auto;
+}
+
+.form-wrapper input, .form-wrapper select {
+	border: 2px solid black;
+	border-radius: 0px;
+}
+.form-wrapper select {
+	width:50px;
+	height:30px;
+	font-size: 1.2em;
+}
+.last {
+	min-height:85px;
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.h {
+	display: block;
+	margin: 0 auto;
+}
+.delivery {
+	font-size: 11px;
+}
+.np {
+	display:inline-block;
+	font-size: 23px;
+	font-family: bebas;
+	position:relative;
+	top:5px;
+}
+.np + img {
+	padding-left:20px;
+}
+.order {
+	width: 100%;
+	border-radius: 0px;
+	border:none;
+	background-color:#2ff1a2;
+	color:#fff;
+	font-family: bebas;
+	font-size: 22px;
+}
+.order:hover {
+	background-color: #55FDB9;
+}
+.price p {
+	font-size: 25px;
+	font-family: bebas;
+	text-align: center;
+	padding:20px;
+	background-color: #F0EFEF;
+	margin: 0px;
+
+}
+.info {
+	padding:10px;
+	font-size: 0.9em;
+}
+.centered {
+	display:block;
+	margin: 0 auto;
+}
+.about_us {
+	text-align:center;
+	background-color:  rgb(239, 237, 237);
+
+}
+.about_us img {
+	border-radius: 50%;
+}
+.names {
+	color:#000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.us_wrap {
+	width:75%;
+	padding:25px;
+	background-color: #fff;
+	margin:0 auto;
+	border-bottom: 1px solid rgb(186, 186, 186);
+	margin-bottom: 70px;
+}
+#mc_embed_signup {
+	width:60%;
+	margin: 0 auto;
+	background: transparent !important;
+}
+
+#mc_embed_signup input[type="email"] {
+	border: 2px solid black;
+}
+#mc_embed_signup input[type="submit"] {
+	background-color: #2ff1a2;
+}
+
+.contact_us {
+	text-align: center;
+	background-image: url(../img/foggy_birds.png);
+	padding-bottom: 50px;
+}
+.details {
+	background-color:  rgb(220, 237, 237);
+}
+.details {
+	padding-top: 30px;
+	background-image: url(../img/foggy_birds.png);
 }

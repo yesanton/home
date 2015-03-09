@@ -20,6 +20,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+     /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -71,7 +77,7 @@
   data-show-faces="true">
   </div>
         <h2>stud muffin</h2>
-        <p>Не виявивши одягу, гідного носити символіку славетного університету Шевченка, двоє юнаків вирішили власноруч втілити їх бачення у життя. Так був створений одяг з університетською символікою, що викликає почуття гордості і бажання одягати його щодня. Ми переконані, що соціальний статус студента - найліпший з усіх існуючих і атрибут, що його підкреслює має бути не менш досконалим. Клопітко відібрані кольори та матеріали,  детально продумані символи та фасон разом з неперевершеною історією створили цей жупан.</p>
+        <p>Не виявивши одягу, гідного носити символіку славетного університету Шевченка, двоє юнаків вирішили власноруч втілити їх бачення у життя. Так був створений одяг з університетською символікою, що викликає почуття гордості і бажання одягати його щодня. Клопітко підібрані кольори й матеріали, детально продумані символи і фасон, що поєднуються з неперевершеною історією - це і є наш жупан. Ми переконані, що соціальний статус студента - найліпший з усіх існуючих і атрибут, що його підкреслює має бути не менш досконалим.  Наостанок ми залишили найпотужніший аргумент: бабусі Івана жупан дуже сподобався!</p>
         <img src="granny.png" alt="" class="granny">
       </div>
     </section>
@@ -79,10 +85,13 @@
     <section class="history" data-parallax="scroll" data-image-src="image/history.jpg">
       <div class="container">
       <h2>назад у минуле</h2>
-      <p>У далекому 1865 році у Гарвардському університеті був винайдений жупан ( letterman jacket, де «letterman» означає людину, що носить літеру). На той час це був звичайний густо зв’язаний светр з нашитою величезною літерою «H» у центрі, який гравці Гарвардської команди з баскетболу носили як уніформу – віддалено подібну до сучасного жупану.</p>
-      <p>Новація зумовила появу декількох правил: одягати светр із літерою дозволялося лише найкращим гравцям команди. Сидиш на лаві запасних? Тренуєшся недостатньо? Віддай наприкінці сезону светр із чарівливою літерою! Магія діяла – вже через десятиліття футбольна команда Гарварду перейняла закоренілу традицію у баскетболістів. Чимдалі все більше команд та університетів підхоплювати традицію і вже до початку ХХ століття светр видозмінився до жупану із класичною перманентно вшитою збоку літерою. 
-      </p>
+      <p>Перший жупан, як його називали тоді “letterman jacket” бере своє коріння з середини XIX століття в найпрестижнішому університеті світу - Університеті Гарварду. Йшов рік 1865-й. Гарвардська команда з бейсболу знайшла спосіб виділити зіркових гравців команди, - нагородити светром з нашитою літерою «H». </p>
+      <p>Одягати светр із літерою дозволялося лише найкращим. Сидиш на лаві запасних? Тренуєшся недостатньо? Віддай наприкінці сезону светр із чарівливою літерою! Магія діяла – вже через десятиліття футбольна команда Гарварду перейняла закоренілу традицію у бейсболістів. Чимдалі все більше команд та університетів підхоплювати традицію і вже до початку ХХ століття жупан поширився серед університетів всієї країни.</p>
       <p>Наступні роки змінювався матеріал жупану: від вовняної основи з контрастними шкіряними рукавами з гордо виділеною літерою до бавовни і шовку. Однак завжди незмінним залишалося ставлення – жупан став беззаперечним символом авторитетності поважного закладу.</p>
+      <div class="last">
+        <img class="h" src="img/h.png" alt="">
+      </div>  
+
       </div>
     </section>
     <section class="numbers clearfix">
@@ -137,6 +146,13 @@
             </div>  
                     <div class="col-md-6">
             <div class="form-wrapper">
+              <div class="price">
+                <p>Вартість - <span>685<span> ГРН</p>
+              </div>
+              <p class="info">Заповніть, будь ласка, форму нижче. Після цього ми зв'яжемось з вами для підтвердження замовлення. </p>
+              <p class="np">доставка    </p>
+              <img src="img/np.png" alt="">
+              <p class="info">*оплата здійснюється безпосередньо у відділенні Нової Пошти.</p>
               <form action="mail/mail.php" method="post">
                    <div class="form-group">
                   <label for="name">Ваше Ім'я</label>
@@ -158,18 +174,70 @@
                       <option value="large">L</option>
                     </select>
                   </div>
-                  <button type="submit" class="btn btn-default">Замовити</button>
+
+                  <button type="submit" class="order btn btn-default">Замовити</button>
+                  <p class="delivery">* вартість доставки - 30грн.</p>
+                  
               </form>
               </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="form">
-      <div class="row">
+    <section class="details">
+      
+      <div class="container"> 
+      
+        <img src="img/info.png" class="info centered" alt="zupan">
+        <p></p>
+        <p>Жупан унікальний. Особливо цей. Було створено лише 30 жупанів, всі з них чоловічі (вибачте дівчата, ми докладаємо зусилля щоб скоро було втілено перший дівчаний жупан). Також ми працюємо над тим, щоб зробити ціну на наші жупани студентською, при цьому зберігши відповідну якість. Для цього нам потрібно значно збільшити тираж. Якщо вам сподобались наші жупани та ви бажаєте допомогти - поділіться посиланням на нашу сторінку зі своїми друзями у одній з соціальних мереж ().</p>
+        <p>Усі питання, пропозиції та відгуки відправляйте на нашу поштову скриньку - <strong>studmuffin.info@gmail.com</strong></p>
+        <p>Якщо ви хочете першими почути про наші новики та акції, сторити з нами жупан для студентів вашого університету або просто запросити нас до себе на вечірку :-) - надішліть нам вашу електронну адресу та перейдіть по посиланню що прийде до вашої скриньки.</p>
+         <div id="mc_embed_signup">
+          <form action="//stud-muffin.us10.list-manage.com/subscribe/post?u=2b25e55daff125eec55b548ae&amp;id=10c478658a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+           <h2></h2>
+          <div class="indicates-required"><span class="asterisk"></span></div>
+          <div class="mc-field-group">
+           <label for="mce-EMAIL">Ваша поштова скринька<span class="asterisk"></span>
+          </label>
+           <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+           <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_2b25e55daff125eec55b548ae_10c478658a" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Надіслати" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+              </div>
+          </form>
+          </div>
+        
+      </div>
 
+      
+    </section>
+    <section class="about_us">
+      <div class="container"> 
+        <h2>Хто ми?</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="us_wrap">
+              <a href="https://www.facebook.com/ivan.burlaka.1" target="_blank"><img src="img/ivan.jpg" class="centered" alt="">
+                <h4 class="names">Іван Буралка</h4></a>
+              <p>Студент факультету кібернетики. Пече італійську піцу, варить найкращу каву, робить красиві фотографії та створює веб-додатки.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="us_wrap desired-height">
+              <a href="https://www.facebook.com/yesanton.007" target="_blank"><img src="img/anton.jpg" class="centered" alt=""><h4 class="names">Антон Єщенко</h4></a>
+              <p>Студент факультету кібернетики. Походить з Великих Кобилячків. Знаходить максимальні коаліції у обмежених кооперативних іграх. У вільний час бігає по Голосієвському району, співає пісні та ошивається європейськими країнами.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <footer>
       
     </footer>
@@ -180,8 +248,13 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/count.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function(cash) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script>
+
       jQuery(function($) {
+        var height = $(".desired-height").css("height");
+        $(".us_wrap").css("height",height);
         var waypoints = $('.numbers').waypoint(function(direction) {
 
         $('#num1').countTo({
