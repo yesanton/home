@@ -1,16 +1,21 @@
 /*Header!!!!*/
 
 @font-face {
-	font-family: 'bebas';
-	src: url('fonts/Bebas_Neue_Cyrillic.eot');
-	src: local('☺'),url('../fonts/Bebas_Neue_Cyrillic.ttf') format('truetype'), url('../fonts/Bebas_Neue_Cyrillic.woff') format('woff'), url('../fonts/Bebas_Neue_Cyrillic.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'bebas';
+  src: url('../fonts/BebasNeueCyrillic.eot');
+  src: url('../fonts/BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
+       url('../fonts/BebasNeueCyrillic.woff') format('woff'),
+       url('../fonts/BebasNeueCyrillic.ttf') format('truetype'),
+       url('../fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
 
-}html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -52,6 +57,7 @@ z-index: -1; }
 	left: 5%;
 	color: #fff;
 	font-family:bebas;
+	opacity:0;
 }
 
 #brand {
@@ -128,13 +134,13 @@ footer p {
 }
 /*NUMBERS*/
 .numbers {
-	padding: 100px 0 50px;
-/*	background-image: url(../img/brickwall.png);*/
+	padding: 100px 0 80px;
+	/*background-color: rgb(245, 245, 245);*/
+	background-image: url(../img/brickwall.png);
 }
 .numbers>div {
-	width: 33.3333%;
+/*	width: 33.3333%;*/
 	min-height: 200px;
-	float:left;
 	text-align: center;
 }
 .number2,
@@ -144,13 +150,13 @@ footer p {
 	height: 100px;
 	width: 100px;
 	margin: 0 auto;
-	background-color: rgb(236, 236, 236);
+	background-color: #fff;
 	border-radius: 50%;
 }
 .numbers p {
 	padding: 15px;
 	font-family: bebas;
-	font-size: 22px;
+	font-size: 23px;
 	width: 70%;
 	margin: 0 auto;
 }
@@ -191,7 +197,7 @@ footer p {
 	font-size: 23px;
 	font-family: bebas;
 	position:relative;
-	top:5px;
+	top:-7px;
 }
 .np + img {
 	padding-left:20px;
@@ -269,7 +275,7 @@ footer p {
 	background-color:  rgb(220, 237, 237);
 }
 .details {
-	padding-top: 30px;
+	padding-top: 50px;
 	background-image: url(../img/foggy_birds.png);
 }
 /*button*/
@@ -281,12 +287,12 @@ footer p {
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 80px;
+	padding: 10px 80px;
 	display: inline-block;
 	margin: 15px 30px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 700;
+	font-weight: 400;
 	outline: none;
 	position: relative;
 	-webkit-transition: all 0.3s;
@@ -312,9 +318,9 @@ footer p {
 .btn-1e {
 	overflow: hidden;
 	width:97%;
-	margin: 20px 0 0;
+	margin: 40px 0 0;
 	color:#fff;
-	font-size: 1.5em;
+	font-size: 27px;
 	color:#fff;
 	outline: none !important;
 }
@@ -352,3 +358,133 @@ footer p {
 	height: 400%;
 	opacity: 1;
 }
+.arrow {
+	height:64px;
+	width:64px;
+	background: transparent url(../img/arrow.png);
+	position:absolute;
+	left:50%;
+	top:100%;
+	margin-bottom: -85px;
+	opacity:0.65;
+}
+.arrow:hover {
+	opacity:1;
+	}
+#u_0_3 {
+	color:#fff;
+}	
+.carousel-indicators {
+	bottom:35px;
+}
+/*Animation*/
+
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+ 
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.delay {
+    -webkit-animation-delay: 0.30s;
+    -moz-animation-delay: 0.30s;
+    -o-animation-delay: 0.30s;
+    animation-delay: 0.30s;
+}
+ 
+.delay-three {
+    -webkit-animation-delay: 0.60s;
+    -moz-animation-delay: 0.60s;
+    -o-animation-delay: 0.60s;
+    animation-delay: 0.60s;
+}
+ 
+ 
+.delay-two {
+    -webkit-animation-delay: 1.0s;
+    -moz-animation-delay: 1.0s;
+    -o-animation-delay: 1.0s;
+    animation-delay: 1.0s;
+}
+ 
+.delay-one {
+    -webkit-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+ 
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+ 
+@-moz-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(20px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+ 
+@-o-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(20px);
+    }
+ 
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+ 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+ 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+ 
+ 
+/*
+End Animation*/
