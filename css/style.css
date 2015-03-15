@@ -119,7 +119,7 @@ footer p {
 	margin: 0 auto;
 }
 #myCarousel:after {
-	content:"Зріст моделі 182см. На моделі розмір M.";
+	content:"<p>Зріст моделі 184см. На моделі розмір M. /n Ім'я моделі: Іван. Номер 0935255055</p>";
 	display:block;
 	text-align: center;
 	padding-top: 7px;
