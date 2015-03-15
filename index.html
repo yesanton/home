@@ -126,7 +126,7 @@
     </section>
     <section class="numbers clearfix">
         <div class="container">
-          <div class="row faden">
+          <div class="row animated faden">
               <div class="col-md-4">
                 <div class="number1"><h2 id="num1"></h2>
                   <p>прототипи зроблено у Adobe Photoshop </p>
@@ -202,25 +202,25 @@
               <p class="np">доставка    </p>
               <img src="img/np.png" alt="">
               <p class="info">*оплата здійснюється безпосередньо у відділенні Нової Пошти.</p>
-              <form method="post" id="order" action="https://docs.google.com/forms/d/1Xtcty-XY-82NULghIMAsbULncy2bIdhzT6oI1_FZXuE/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+              <form method="post" id="order" action="https://docs.google.com/forms/d/1fZXB6unQek8VeQx7f-SRPzqmsGRRe7KJ00qwXbDb48M/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
                    <div class="form-group">
                   <label for="name">Ваше Ім'я</label>
-                    <input name="entry.123684889" type="text" class="form-control" id="name" placeholder="Ім'я Прізвище По-батькові">
+                    <input name="entry.850202998" type="text" class="form-control" id="name" placeholder="Ім'я Прізвище По-батькові">
                   </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Адреса</label>
-                    <input  name="entry.1016663353" type="text" class="form-control" id="adress" placeholder="Місто, вулиця, будинок, індекс">
+                    <input  name="entry.1376362949" type="text" class="form-control" id="adress" placeholder="Місто, вулиця, будинок, індекс">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Мобільний телефон</label>
-                      <input  name="entry.2060330120" type="text" class="form-control" id="phone" placeholder="093 594 93 53">
+                      <input  name="entry.1798511429" type="text" class="form-control" id="phone" placeholder="093 594 93 53">
                   </div>
                   <div class="form-group">
                     <label for="size">Ваш розмір</label>
-                    <select name="entry.1297380573" id="size">
-                      <option value="small">S</option>
-                      <option value="medium">M</option>
-                      <option value="large">L</option>
+                    <select name="entry.1452495229" id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
                     </select>
                   </div>
 
@@ -238,7 +238,6 @@
       <div class="container"> 
       
         <img src="img/info.png" class="info centered" alt="zupan">
-        <p></p>
         <p>Усі питання, пропозиції та відгуки відправляйте на нашу поштову скриньку - <strong>studmuffin.info@gmail.com</strong></p>
         <p>Якщо ви хочете першими почути про наші новики та акції, створити з нами жупан для студентів вашого університету або просто запросити нас до себе на вечірку :-) - надішліть нам вашу електронну адресу та перейдіть по посиланню що прийде до вашої скриньки.</p>
          <div id="mc_embed_signup">
@@ -352,7 +351,9 @@
         // var height = $(".desired-height").css("height");
         // $(".us_wrap").css("height",height);
         var waypoints = $('.numbers').waypoint(function(direction) {
-          $(".faden").fadeIn("slow");
+          $(".faden").addClass("fadeInUp");
+          $(".faden").show();
+
 
         $('#num1').countTo({
             from: 0,

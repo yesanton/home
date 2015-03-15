@@ -257,6 +257,7 @@ footer p {
 	width:60%;
 	margin: 0 auto;
 	background: transparent !important;
+	padding-bottom: 30px;
 }
 
 #mc_embed_signup input[type="email"] {
@@ -496,6 +497,9 @@ footer p {
 .social {
 	padding-bottom: 7px;
 }
- 
+.details p {
+	text-align: center;
+	padding:20px;
+}
 /*
 End Animation*/
