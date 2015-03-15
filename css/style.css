@@ -483,8 +483,9 @@ footer p {
     -o-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
-
- 
+.vk a {
+	height:21px;
+} 
  
 /*
 End Animation*/
