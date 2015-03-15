@@ -39,7 +39,7 @@ z-index: -1; }
 
 .flag {
 	width: 110px;
-	height: 114px;
+	height: 112px;
 	background: url(../flag.png);
 	position:absolute;
 	left:85%;
@@ -484,7 +484,7 @@ footer p {
     animation-name: fadeInUp;
 }
 .vk a {
-	height:21px !important;
+	height:22px !important;
 } 
 .vk {
 	float:left;
