@@ -13,8 +13,21 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 
-  
+  <script type="text/javascript">
+    VK.init({apiId: 4828659, onlyWidgets: true});
+  </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60759872-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
 
 
     <!-- Bootstrap -->
@@ -76,6 +89,10 @@
   data-width="450"
   data-show-faces="true">
   </div>
+    <div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>
       <h2 id="brand">Університетський жупан</h2>
       <ul class="title-list clearfix">
         <li>натхненний історією</li>
@@ -171,6 +188,15 @@
               </div>
             </div>  
                     <div class="col-md-6">
+                  <script type="text/javascript">var submitted=false;
+                  </script>
+                    <iframe name="hidden_iframe" id="hidden_iframe"
+                    style="display:none;" onload="if(submitted)
+                    {
+                      formProcess();
+                                     }">
+                    </iframe>
+
             <div class="form-wrapper">
               <div class="price">
                 <p>Вартість - <span>685<span> ГРН</p>
@@ -179,29 +205,29 @@
               <p class="np">доставка    </p>
               <img src="img/np.png" alt="">
               <p class="info">*оплата здійснюється безпосередньо у відділенні Нової Пошти.</p>
-              <form method="post" id="order">
+              <form method="post" id="order" action="https://docs.google.com/forms/d/1Xtcty-XY-82NULghIMAsbULncy2bIdhzT6oI1_FZXuE/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
                    <div class="form-group">
                   <label for="name">Ваше Ім'я</label>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Ім'я Прізвище По-батькові">
+                    <input name="entry.123684889" type="text" class="form-control" id="name" placeholder="Ім'я Прізвище По-батькові">
                   </div>
                  <div class="form-group">
                   <label for="exampleInputEmail1">Адреса</label>
-                    <input name="adress" type="text" class="form-control" id="exampleInputEmail1" placeholder="Місто, вулиця, будинок, індекс">
+                    <input  name="entry.1016663353" type="text" class="form-control" id="adress" placeholder="Місто, вулиця, будинок, індекс">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Мобільний телефон</label>
-                      <input name="phone" type="text" class="form-control" id="exampleInputEmail1" placeholder="093 594 93 53">
+                      <input  name="entry.2060330120" type="text" class="form-control" id="phone" placeholder="093 594 93 53">
                   </div>
                   <div class="form-group">
                     <label for="size">Ваш розмір</label>
-                    <select name="size" id="size">
+                    <select name="entry.1297380573" id="size">
                       <option value="small">S</option>
                       <option value="medium">M</option>
                       <option value="large">L</option>
                     </select>
                   </div>
 
-                  <button type="submit" class="order btn btn-default">Замовити</button>
+                  <button class="order btn btn-default">Замовити</button>
                   <p class="delivery">* вартість доставки - 30грн.</p>
                   
               </form>
@@ -216,7 +242,6 @@
       
         <img src="img/info.png" class="info centered" alt="zupan">
         <p></p>
-        <p>Жупан унікальний. Особливо цей. Було створено лише 30 жупанів, всі з них чоловічі (вибачте дівчата, ми докладаємо зусилля щоб скоро було втілено перший дівчаний жупан). Також ми працюємо над тим, щоб зробити ціну на наші жупани студентською, при цьому зберігши відповідну якість. Для цього нам необхідно значно збільшити тираж. Якщо вам сподобались наші жупани та ви бажаєте допомогти - поділіться посиланням на нашу сторінку зі своїми друзями у одній з соціальних мереж ().</p>
         <p>Усі питання, пропозиції та відгуки відправляйте на нашу поштову скриньку - <strong>studmuffin.info@gmail.com</strong></p>
         <p>Якщо ви хочете першими почути про наші новики та акції, створити з нами жупан для студентів вашого університету або просто запросити нас до себе на вечірку :-) - надішліть нам вашу електронну адресу та перейдіть по посиланню що прийде до вашої скриньки.</p>
          <div id="mc_embed_signup">
@@ -279,11 +304,34 @@
     
     <script type='text/javascript'>(function(cash) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script>
-
+        function formProcess(){
+          var hasError=false;
+          var name= $("#name").val();
+          var adress= $("#adress").val();
+          var phone= $("#phone").val();
+          if(name==""){
+            $('#name').after('<div class="alert alert-danger alert-dismissible fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Як вас звати?</div>');  
+            hasError=true;
+          }
+          else if(adress=="") {
+              $("#adress").after('<div class="alert alert-danger alert-dismissible fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Введіть вашу адресу!</div>');
+              hasError=true;
+          }
+          else if(phone.length <10) {
+            $("#phone").after('<div class="alert alert-danger alert-dismissible fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Введіть ваш мобільний телефон - XXX XX XX XXX</div>');
+            hasError=true;
+          }
+          if(hasError==false){
+            $("#size").after('<div class="alert alert-success alert-dismissible fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Дякую! Ми якнайшвидше зв\'яжемось з вами для підтвердження замовлення!</div>');
+            $("#order")[0].reset();
+            $(".order").fadeOut();
+          }
+        }
       jQuery(function($) {
-        $("#order").ajaxForm(function(){
-          alert("all good");
-        });
+
+      //   $("#order").ajaxForm(function(){
+      //     alert("all good");
+      //   });
 
         $(".title-wrapper").addClass("fadeInUp");
         $(".faden").hide();
