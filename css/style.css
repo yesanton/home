@@ -501,5 +501,30 @@ footer p {
 	text-align: center;
 	padding:20px;
 }
+@media screen and (max-width:860px) {
+#brand {
+  font-size: 3em;
+}
+.title-list li {
+	font-size: 17px;
+}
+.arrow {
+	display:none;
+}
+.btn-1e {
+	margin:15px 0 0;
+	font-size: 20px;
+	padding:8px;
+	width:90%;
+}
+.title-wrapper {
+	margin-top: -35%;
+}
+.flag {
+	width: 82px;
+  height: 81px;
+    left: 83%;
+}
+}
 /*
 End Animation*/
