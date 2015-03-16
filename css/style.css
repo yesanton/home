@@ -525,6 +525,12 @@ footer p {
   height: 81px;
     left: 83%;
 }
+
+}
+@media screen and (max-width:1200px) {
+	.arrow {
+		display:none;
+	}
 }
 /*
 End Animation*/
