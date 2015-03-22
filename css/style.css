@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: 'bebas';
-  src: url('../fonts/BebasNeueCyrillic.eot');
+  src: url('../fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic') format('svg');
   src: url('../fonts/BebasNeueCyrillic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/BebasNeueCyrillic.woff2') format('woff2'),
        url('../fonts/BebasNeueCyrillic.woff') format('woff'),
-       url('../fonts/BebasNeueCyrillic.ttf') format('truetype'),
-       url('../fonts/BebasNeueCyrillic.svg#BebasNeueCyrillic') format('svg');
+       url('../fonts/BebasNeueCyrillic.ttf') format('truetype');
+       
   font-weight: normal;
   font-style: normal;
 }
@@ -240,6 +240,7 @@ footer p {
 	border-radius: 50%;
 }
 .names {
+	padding:7px;
 	color:#000;
 	text-decoration: none;
 	font-weight: bold;
@@ -251,7 +252,7 @@ footer p {
 	margin:0 auto;
 	border-bottom: 1px solid rgb(186, 186, 186);
 	margin-bottom: 70px;
-	min-height: 400px;
+	min-height: 414px;
 }
 #mc_embed_signup {
 	width:60%;
@@ -527,6 +528,37 @@ footer p {
 }
 
 }
+
+@media screen and (max-width:576px) {
+	body {
+		min-width: 480px;
+	}
+
+	.header {
+		min-width: 480px;
+	}
+
+	.btnn {
+		display:none;
+	}
+
+	.titile-list {
+		font-size: 16px
+	}
+
+	.flag {
+	  width: 60px;
+	  height: 59px;
+	  left: 78%;
+	}
+	.header ul {
+	  margin-left: -13px;
+	}
+	.title-wrapper {
+  		margin-top: -26%;
+	}
+	
+}
 @media screen and (max-width:1200px) {
 	.arrow {
 		display:none;
@@ -534,3 +566,14 @@ footer p {
 }
 /*
 End Animation*/
+#vkshare_cnt0 {
+	height:21px !important;
+}
+.sizesLeft {
+	padding-bottom:12px;
+	font-weight: bold;
+	text-align: center;
+}
+.sizesLeft span {
+	color: red;
+}
